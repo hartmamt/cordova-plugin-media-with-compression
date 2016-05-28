@@ -246,7 +246,7 @@ function onMessageFromNative(msg) {
     }
 }
 
-if (cordova.platformId === 'android' || cordova.platformId === 'amazon-fireos' || cordova.platformId === 'windowsphone') {
+//if (cordova.platformId === 'android' || cordova.platformId === 'amazon-fireos' || cordova.platformId === 'windowsphone') {
 
     var channel = require('cordova/channel');
 
@@ -257,4 +257,4 @@ if (cordova.platformId === 'android' || cordova.platformId === 'amazon-fireos' |
         exec(onMessageFromNative, undefined, 'Media', 'messageChannel', []);
         channel.initializationComplete('onMediaPluginReady');
     });
-}
+//}
